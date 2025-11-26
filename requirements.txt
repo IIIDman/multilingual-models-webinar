@@ -1,0 +1,16 @@
+# Core dependencies
+numpy>=1.21.0
+scipy>=1.7.0
+
+# Text processing
+chardet>=4.0.0
+
+# Language detection
+fasttext>=0.9.2
+
+# Deep learning (optional - for model benchmarking)
+# torch>=1.9.0
+# transformers>=4.10.0
+
+# Visualization (optional)
+# matplotlib>=3.4.0
