@@ -1,52 +1,46 @@
-# Multilingual Model Deployment - Code Examples
+# Multilingual AI in Production - Webinar Series
 
-Supplementary code examples from my webinar: **"Challenges of Deploying Multilingual Models in Production"**
+Code and utilities from my webinar series on deploying multilingual NLP systems. Three parts covering the full pipeline from model selection to production monitoring.
 
-## 📁 Contents
+## Webinars
 
-| File | Description |
-|------|-------------|
-| `encoding_utils.py` | UTF-8 validation and Unicode normalization |
-| `language_detection.py` | Language detection with fastText |
-| `drift_detection.py` | Data drift monitoring |
-| `metrics_tracker.py` | Per-language performance monitoring |
-| `ab_testing.py` | A/B test traffic routing |
-| `code_switching.py` | Synthetic code-switched data generation |
-| `model_benchmark.py` | Model inference speed benchmarking |
+### [Webinar 1: Challenges of Deploying Multilingual Models](./webinar1/)
+The reality of multilingual models in production vs. research benchmarks. Covers language detection, encoding issues, performance monitoring, and A/B testing strategies.
 
-## 🚀 Quick Start
+### [Webinar 2: Building Robust Data Pipelines](./webinar2/)
+Data pipeline utilities for multilingual text. Encoding validation, script detection, normalization (including Turkish edge cases), mixed-language handling, and quality monitoring.
 
-```bash
-# Install dependencies
-pip install chardet fasttext scipy transformers torch numpy
+### Webinar 3: Optimizing Multilingual Models
+*Coming soon* - Performance vs. accuracy trade-offs, model compression, distillation, and serving strategies.
 
-# Download fastText language identification model
-wget https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin
+## Structure
+
+```
+├── webinar1/          # Deployment challenges, monitoring, A/B testing
+├── webinar2/          # Data pipelines, preprocessing, quality checks
+└── webinar3/          # (upcoming) Model optimization
 ```
 
-## 📊 Key Takeaways from the Webinar
+## Getting Started
 
-1. **Multilingual ≠ Equal** - Performance varies drastically by language
-2. **Test on YOUR data** - Research benchmarks don't reflect production reality
-3. **Know your tradeoffs** - Accuracy vs. latency vs. cost — pick two
-4. **Monitor per language** - Aggregate metrics hide critical issues
-5. **Start simple, iterate** - Zero-shot → Active learning → Scale
-6. **Engineer for production** - Encoding, monitoring, rollback plans matter
+Each webinar folder has its own README with setup instructions. The code is meant to be adapted to your use case, not used as-is.
 
-## 📚 Resources
+```bash
+git clone https://github.com/YOUR_USERNAME/multilingual-ai-webinars.git
+cd multilingual-ai-webinars/webinar1
+pip install -r requirements.txt
+```
 
-- [Hugging Face Multilingual Models](https://huggingface.co/models?language=multilingual)
-- [fastText Language Identification](https://fasttext.cc/docs/en/language-identification.html)
-- [ONNX Runtime](https://onnxruntime.ai/)
+## Why This Exists
 
-## 📧 Contact
+Most multilingual NLP content focuses on model architectures and benchmark scores. This series covers the unglamorous parts that actually matter in production: encoding bugs, per-language monitoring, data quality, and the trade-offs you'll inevitably make.
 
-**Dmitriy Tsarev**  
-AI/ML Engineer | NLP Specialist
+## Author
 
-- LinkedIn: [linkedin.com/in/cxbrv](https://www.linkedin.com/in/cxbrv/)
-- Email: tsarevdmit@gmail.com
+Dmitriy Tsarev  
+AI/ML Engineer  
+[LinkedIn](https://www.linkedin.com/in/cxbrv/) | tsarevdmit@gmail.com
 
----
+## License
 
-*These code examples are provided as starting points. Adapt them to your specific use case and production requirements.*
+MIT - use however you want.
