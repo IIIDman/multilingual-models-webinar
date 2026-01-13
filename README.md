@@ -10,15 +10,15 @@ The reality of multilingual models in production vs. research benchmarks. Covers
 ### [Webinar 2: Building Robust Data Pipelines](./webinar2/)
 Data pipeline utilities for multilingual text. Encoding validation, script detection, normalization (including Turkish edge cases), mixed-language handling, and quality monitoring.
 
-### Webinar 3: Optimizing Multilingual Models
-*Coming soon* - Performance vs. accuracy trade-offs, model compression, distillation, and serving strategies.
+### [Webinar 3: Optimizing Multilingual NLP Models](./webinar3/)
+Performance vs. accuracy trade-offs. Knowledge distillation, quantization, per-language evaluation, cost-benefit analysis, and production monitoring.
 
 ## Structure
 
 ```
 ├── webinar1/          # Deployment challenges, monitoring, A/B testing
 ├── webinar2/          # Data pipelines, preprocessing, quality checks
-└── webinar3/          # (upcoming) Model optimization
+└── webinar3/          # Model optimization, distillation, quantization
 ```
 
 ## Getting Started
@@ -26,8 +26,8 @@ Data pipeline utilities for multilingual text. Encoding validation, script detec
 Each webinar folder has its own README with setup instructions. The code is meant to be adapted to your use case, not used as-is.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/multilingual-ai-webinars.git
-cd multilingual-ai-webinars/webinar1
+git clone https://github.com/IIIDman/multilingual-models-webinar.git
+cd multilingual-models-webinar/webinar1
 pip install -r requirements.txt
 ```
 
